@@ -23,6 +23,10 @@ batteries-included features such as:
 - [ ] **Deploy with [fly.io](https://fly.io)**
   - Follow
     [this guide for instructions on how to deploy Dockerfile-based applications](https://fly.io/docs/languages-and-frameworks/dockerfile/).
+  - For persistence, either create a
+    [fly.io volumes](https://fly.io/docs/reference/volumes/) or integrate with
+    [litestream.io](https://litestream.io) for replication to your S3-backed
+    file storage.
 - [ ] **Integrate with [litestream.io](https://litestream.io)**
   - This requires modification on the Dockerfile, where Litestream will run as a
     sidecar to Pocketbase. For example, see

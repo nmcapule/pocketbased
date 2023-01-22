@@ -37,6 +37,7 @@ processes = []
     restart_limit = 0
     timeout = "2s"
 
+# Makes sure that your data persists using fly.io volumes.
 [mounts]
   source="data"
   destination="/pb_data"
